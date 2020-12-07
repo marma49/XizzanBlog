@@ -1,0 +1,134 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background: rgb(255, 241, 241);
+}
+
+nav {
+    grid-area: nav;
+    background-color: rgb(58, 129, 156);
+}
+
+nav ul {
+    display: flex;
+    font-size: 20px;
+    text-align: center;
+    list-style-type: none;
+}
+
+nav ul li {
+    padding: 16px;
+}
+
+#login {
+    margin-left: auto;
+}
+
+#XizzanBlog {
+    padding: 14 16 14 16;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: rgb(227, 227, 252)
+}
+
+@media only screen and (max-width: 610px) {
+    nav ul {
+        flex-direction: column;
+    }
+    #login {
+        margin-left: 0%
+    }
+}
+
+#leftbar {
+    grid-area: leftbar;
+}
+
+#centbar {
+    grid-area: centbar;
+}
+
+#rightbar {
+    grid-area: rightbar;
+}
+
+#structure {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "nav nav nav"
+    "leftbar centbar rightbar"
+    "footer footer footer"
+}
+
+#centbar {
+    max-width: 1152px;
+    margin: 0 auto;
+    display: grid;
+}
+
+article {
+    border-radius: 10px;
+    background: rgb(255, 255, 255);
+    margin: 30px 0px 0px 0px;
+    padding: 25px 40px 40px 40px;
+    font-size: 17px;
+}
+
+article img {
+    margin-right: 30px;
+    float: left;
+    width: 300px;
+    height: 200px;
+}
+
+article h1 {
+    margin-bottom: 25px;
+}
+
+article h1 a {
+    color: rgb(59, 59, 59);
+    text-decoration: none;
+}
+
+article h1 a:hover {
+    color: gray;
+}
+
+#post_info {
+    font-weight: bold;
+    font-size: 14;
+    color: white;
+    padding: 8px;
+    margin-bottom: 18px;
+    background: rgb(58, 129, 156);
+}
+
+#comment {
+    float: right;
+}
+
+footer {
+    grid-area: footer;
+    text-align: center;
+    margin-top: 30px; 
+    font-weight: bold;
+    font-size: 14;
+    color: white;
+    padding: 20px;
+    background: rgb(58, 129, 156);
+}
+
